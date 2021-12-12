@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppBar, IconButton, Toolbar, Collapse, Fade } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import HomeIcon from '@mui/icons-material/Home';
 import SortIcon from '@material-ui/icons/Sort';
 import { CssBaseline } from '@material-ui/core';
 import { Link } from 'react-router-dom';
@@ -8,7 +9,7 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
     icon: {
         color: '#fff',
-        fontSize: '2rem',
+        fontSize: '3rem',
     },
     linkStyle: {
         color: 'white',
@@ -25,7 +26,7 @@ export default function Nav() {
         <nav >
             <Link className={classes.linkStyle} to='/'>
                 <IconButton>
-                    <SortIcon className={classes.icon}/>
+                    <HomeIcon className={classes.icon}/>
                 </IconButton>
             </Link>
 

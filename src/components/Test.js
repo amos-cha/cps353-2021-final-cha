@@ -8,7 +8,7 @@ import RefreshIcon from '@material-ui/icons/Refresh';
 const useStyles = makeStyles((theme) => ({
     root: {
         minHeight: '100vh',
-        backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/bg1.jpg'})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/bg.jpg'})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
       },

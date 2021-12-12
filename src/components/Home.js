@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, IconButton, Toolbar, Collapse, Fade } from '@material-ui/core';
-import SortIcon from '@material-ui/icons/Sort';
+import { AppBar, IconButton, Toolbar, Collapse, Fade, CssBaseline } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import RefreshIcon from '@material-ui/icons/Refresh';
+import Body from './Body';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         minHeight: '100vh',
-        backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/thankyoumrabbot.jpg'})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/bg.jpg'})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        margin: 'auto',
       },
     appbar: {
         background: 'none',
@@ -72,7 +72,7 @@ export default function Home() {
 
     return (
         <div className={classes.root}>
-
+                <CssBaseline />
                 <div className={classes.container}>
                     <Collapse
                     in={checked}
@@ -89,6 +89,13 @@ export default function Home() {
                         </div>
                     </Fade>
                 </div>
+                
+                <br />
+                <br />
+                <br />
+
+
+                <Body />
         </div>
     );
 }
