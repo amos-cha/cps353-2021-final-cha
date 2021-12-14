@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, IconButton, Toolbar, Collapse, Fade, CssBaseline } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Link as LinkRS } from 'react-scroll';
+
 import Body from './Body';
 import Body1 from './Body1';
 import Body2 from './Body2';
@@ -52,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
         margin: '30px',
     },
     down: {
-        color: '#3fe8b0',
+        color: '#fff',
         fontSize: '5rem',
     },
     refreshDiv: {
@@ -85,19 +87,21 @@ export default function Home() {
                     in={checked}
                     {...(checked ? { timeout: 1000 } : {})}> 
                         <h1 className={classes.panel_01}>
-                            Welcome to <br />HOME PAGE/<span className={classes.headerSpan}>span</span>
+                            Welcome to<br />Amos' <span className={classes.headerSpan}>Home Page</span>
                         </h1>
                     </Collapse>
                     <Fade in={checked} {...(checked ? { timeout: 2000 } : {})}> 
                         <div className={classes.downButton}>
-                            <IconButton>
-                                <ExpandMoreIcon className={classes.down} />
-                            </IconButton>
+                            <LinkRS to='projects' smooth={true} duration={1000} > 
+                                <IconButton > 
+                                    <ExpandMoreIcon className={classes.down} />
+                                </IconButton>
+                            </LinkRS>
                         </div>
                     </Fade>
                 </div>
 
-                <div className={classes.projects} >
+                <div className={classes.projects} id='projects'>
                     <Body />
                     <Body1 />
                     <Body2 />

@@ -13,6 +13,10 @@ const useStyles = makeStyles((theme) => ({
     },
     linkStyle: {
         color: 'white',
+        fontWeight: 'bold',
+        fontSize: 'rem',
+        color: '#fff',
+        textDecoration: 'none',
     },
 }));
 
@@ -32,7 +36,7 @@ export default function Nav() {
 
             <ul className='nav-links'>
                 <Link className={classes.linkStyle} to='/project'>
-                    <li>project</li>
+                    <li>Bible API</li>
                 </Link>
 
                 <Link className={classes.linkStyle} to='/test'>

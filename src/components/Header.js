@@ -85,7 +85,7 @@ export default function Header() {
                     in={checked}
                     {...(checked ? { timeout: 1000 } : {})}> 
                         <h1 className={classes.panel_01}>
-                            Welcome to <br />THIS LANDING PAGE/<span className={classes.headerSpan}>span</span>
+                            Welcome to <br />Bible API <span className={classes.headerSpan}>Search</span>
                         </h1>
 
                         <div className={classes.bibleAPI}>
@@ -100,14 +100,6 @@ export default function Header() {
                             {/* </Link> */}
                         </div>
                     </Collapse>
-                    
-                    <Fade in={checked} {...(checked ? { timeout: 2000 } : {})}> 
-                        <div className={classes.downButton}>
-                            <IconButton>
-                                <ExpandMoreIcon className={classes.down} />
-                            </IconButton>
-                        </div>
-                    </Fade>
                 </div>
         </div>
     );

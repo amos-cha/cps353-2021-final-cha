@@ -13,9 +13,13 @@ const useStyles = makeStyles((theme) => ({
         height: "100vh", 
         marginTop: '40vh',
         marginLeft: '5%',
+        marginRight: '5%',
         width: '30%',
     },
-    
+    card: {
+        backgroundColor: 'rgba(0,0,0)',
+        maxWidth: '345',
+    }
 }));
 
 export default function Body1() {
@@ -29,24 +33,24 @@ export default function Body1() {
     return (
         <div className={classes.root} >
 
-            <Card sx={{ maxWidth: 345 }}>
+            <Card className={classes.card}>
                 <CardMedia
                     component="img"
                     height="200"
-                    image={process.env.PUBLIC_URL + '/assets/thankyoumrabbot.jpg'}
-                    alt="green iguana"
+                    image={process.env.PUBLIC_URL + '/assets/fifteenicon.jpg'}
+                    alt="fifteen"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                    Lizard
+                    Fifteen Project
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+                    More advanced use of JS to mananipulate html elements and using react hooks
+                    to produce a simple puzzle game.
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small" href="file:projects/ttt/site.html" >Learn More</Button>
+                    <Button size="small" href="/fifteen" >Non Working Button</Button>
                 </CardActions>
             </Card>
 

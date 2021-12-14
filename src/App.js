@@ -6,6 +6,7 @@ import Test2 from './components/Test2';
 import { Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Header from './components/Header';
+import Cam from './components/redirects/cam';
 
 
 
@@ -19,6 +20,8 @@ function App() {
           <Route path="/project" element={ <Header /> } />
           <Route path="/test" element={ <Test /> } />
           <Route path="/test2" element={ <Test2 /> } />
+
+          <Route path="/cameronabbot" element={ <Cam /> } />
         </Routes>
         
       </div>

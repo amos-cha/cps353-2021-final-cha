@@ -13,9 +13,13 @@ const useStyles = makeStyles((theme) => ({
         height: "100vh", 
         marginTop: '40vh',
         marginLeft: '5%',
+        marginRight: '5%',
         width: '30%',
     },
-    
+    card: {
+        backgroundColor: 'rgba(0,0,0)',
+        maxWidth: '345',
+    }
 }));
 
 export default function Body2() {
@@ -29,24 +33,24 @@ export default function Body2() {
     return (
         <div className={classes.root} >
 
-            <Card sx={{ maxWidth: 345 }}>
+            <Card className={classes.card}>
                 <CardMedia
                     component="img"
                     height="200"
                     image={process.env.PUBLIC_URL + '/assets/thankyoumrabbot.jpg'}
-                    alt="green iguana"
+                    alt="cam"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                    Lizard
+                    CameronAbbot.com
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+                    Cameron Abbot's personal website developed by himself depicting
+                    his accomplishments and resume.
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small" href="file:projects/ttt/site.html" >Learn More</Button>
+                    <Button size="small" target='_blank' href="/cameronabbot" >Learn More</Button>
                 </CardActions>
             </Card>
 
