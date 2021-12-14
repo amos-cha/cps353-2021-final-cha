@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, IconButton, Toolbar, Collapse, Fade, CssBaseline } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Body from './Body';
+import Body1 from './Body1';
+import Body2 from './Body2';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -47,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
     },
     downButton: {
         textAlign: 'center',
+        margin: '30px',
     },
     down: {
         color: '#3fe8b0',
@@ -60,6 +63,10 @@ const useStyles = makeStyles((theme) => ({
         color: 'white',
         fontSize: '4rem',
     },
+    projects: {
+        display: 'flex',
+
+    }
 }));
 
 export default function Home() {
@@ -89,13 +96,13 @@ export default function Home() {
                         </div>
                     </Fade>
                 </div>
+
+                <div className={classes.projects} >
+                    <Body />
+                    <Body1 />
+                    <Body2 />
+                </div>
                 
-                <br />
-                <br />
-                <br />
-
-
-                <Body />
         </div>
     );
 }

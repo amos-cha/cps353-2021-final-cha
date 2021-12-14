@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     
 }));
 
-export default function Body() {
+export default function Body1() {
     const classes = useStyles();
     const [checked, setChecked] = useState(false);
 
