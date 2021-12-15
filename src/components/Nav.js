@@ -21,9 +21,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Nav() {
-    const linkStyle = {
-        color: 'white'
-    };
     const classes = useStyles();
 
     return (
@@ -39,13 +36,13 @@ export default function Nav() {
                     <li>Bible API</li>
                 </Link>
 
-                <Link className={classes.linkStyle} to='/test'>
+                {/* <Link className={classes.linkStyle} to='/test'>
                     <li>test</li>
                 </Link>
 
                 <Link className={classes.linkStyle} to='/test2'>
                     <li>test2</li>
-                </Link>
+                </Link> */}
                 
             </ul>
         </nav>

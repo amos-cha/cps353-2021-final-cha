@@ -7,6 +7,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Header from './components/Header';
 import Cam from './components/redirects/cam';
+import Tictactoe from './components/redirects/tictactoe';
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/test" element={ <Test /> } />
           <Route path="/test2" element={ <Test2 /> } />
 
+          <Route path="/tictactoe" element={ <Tictactoe /> } />
           <Route path="/cameronabbot" element={ <Cam /> } />
         </Routes>
         

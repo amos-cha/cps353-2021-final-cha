@@ -8,9 +8,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
-        height: "100vh", 
+        height: "70vh", 
         marginTop: '40vh',
         marginLeft: '5%',
         marginRight: '5%',
@@ -33,6 +34,7 @@ export default function Body() {
 
     return (
         <div className={classes.root} id='body'>
+            
 
             <Card className={classes.card} >
                 <CardMedia
@@ -51,7 +53,7 @@ export default function Body() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small" href="/tictactoe" >Non Functioning Button</Button>
+                    <Button size="small" href="/tictactoe" >Link to unfunctional game</Button>
                 </CardActions>
             </Card>
 

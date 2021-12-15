@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, IconButton, Toolbar, Collapse, Fade, CssBaseline } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as LinkRS } from 'react-scroll';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 import Body from './Body';
 import Body1 from './Body1';
@@ -77,6 +79,7 @@ export default function Home() {
 
     useEffect(() => {
         setChecked(true);
+        Aos.init({ duration: 2000 });
     }, []);
 
     return (
@@ -101,7 +104,8 @@ export default function Home() {
                     </Fade>
                 </div>
 
-                <div className={classes.projects} id='projects'>
+                <div data-aos='flip-left' className={classes.projects} id='projects'>
+                    
                     <Body />
                     <Body1 />
                     <Body2 />
